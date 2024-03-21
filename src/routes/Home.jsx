@@ -33,7 +33,7 @@ const Home = () => {
 
 //Hook se debe poner antes del loading, si no nunca se hace el llamado a la bd (no cumpliria con el if nunca)
 
-  if(loading.getData) return <p>Loading data...</p>
+  if(loading.getData) return <p>Loading data...</p> else if
   if(error) return <p>{error}</p>
 
   const onSubmit = async({url}) => {

@@ -28,7 +28,7 @@ const Register = () => {
        //al ser una promesa puede capturarse con try y catch
        setLoading(true);
        await registerUser(email, password);
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       console.log(error.code);
       const {code, message} = errorFirebase(error.code) 
